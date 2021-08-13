@@ -26,6 +26,10 @@ ALTER ROLE twinspark SET timezone TO 'UTC';
 -- Grant permissions
 GRANT ALL PRIVILEGES ON DATABASE twinspark TO twinspark;
 
+-- To alter role as a superuser
+ALTER ROLE twinspark SUPERUSER;
+ALTER ROLE twinspark NOSUPERUSER;
+
 -- To drop
 DROP DATABASE IF EXISTS twinspark;
 DROP ROLE IF EXISTS twinspark;
